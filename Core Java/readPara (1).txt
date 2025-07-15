@@ -1,0 +1,14 @@
+import java.util.*;
+
+public class readPara{
+
+  public static void main(String[]args){
+   
+  Scanner Uin=new Scanner(System.in);
+  System.out.println("ENTER PARA :");
+  String para=Uin.nextLine();
+int len=para.length();
+  System.out.println(len) ;
+}
+
+}

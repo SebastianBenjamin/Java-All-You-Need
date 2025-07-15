@@ -1,0 +1,26 @@
+import java.util.*;
+
+class stTok{
+
+public static void main(String []args){
+	
+Scanner ui = new Scanner(System.in);
+System.out.print("Enter a string :");
+String myString=ui.nextLine();
+
+StringTokernizer comma= new StringTokenizer(myString,",");
+
+while(comma.hasMoreTokens()){
+System.out.println(comma.nextToken());
+
+	}
+
+
+
+ 	
+	}
+
+
+
+
+}

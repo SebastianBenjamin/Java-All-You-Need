@@ -1,0 +1,7 @@
+ path of .jar file:"D:\Benjamin_Sebastian_MCA-2024-26_Java\lib\mysql-connector-j-8.0.31.jar"
+
+	1: import sql package
+	2: load driver(oracle,mysql..etc)
+	3: connect to database
+	4:statement,create result se
+	5: classfound,sqlexception,general exception

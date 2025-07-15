@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE students SYSTEM "students.dtd">
+<students>
+    <student>
+        <id>1</id>
+        <name>Benji</name>
+        <grade>A</grade>
+    </student>
+</students>

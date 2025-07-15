@@ -1,0 +1,25 @@
+@echo off
+powershell -NoProfile -ExecutionPolicy Bypass -Command " 
+Get-ChildItem -Filter '*.java' | Where-Object { $_.Name -match ' \([0-9]+\)\.java$' } | ForEach-Object {
+    $newName = $_.Name -replace ' \([0-9]+\)', ''
+    $originalPath = Join-Path $_.DirectoryName $newName
+
+    if (-not (Test-Path $originalPath)) {
+        Rename-Item $_.FullName -NewName $newName
+        Write-Host ('Renamed: {0} → {1}' -f $_.Name, $newName)
+    }
+    else {
+        $hash1 = Get-FileHash $_.FullName
+        $hash2 = Get-FileHash $originalPath
+
+        if ($hash1.Hash -eq $hash2.Hash) {
+            Write-Host ('Deleting duplicate: {0}' -f $_.Name)
+            Remove-Item $_.FullName -Force
+        }
+        else {
+            Write-Host ('Conflict found: {0} ≠ {1}' -f $_.Name, $newName)
+        }
+    }
+}
+"
+pause

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Operations</title>
+</head>
+<body>
+<h1>Student Management</h1>
+
+<form method="post" action="StudentServlet">
+    <input type="hidden" name="action" value="insert" />
+    <fieldset style="display: flex;align-items: center;justify-content: center;gap: 10px;flex-wrap: wrap;width: 50%;">
+    <legend>Insert Student</legend>
+    Name: <input type="text" name="name" /><br>
+    Email: <input type="text" name="email" /><br>
+    City: <input type="text" name="city" /><br>
+    Java: <input type="number" name="java" /><br>
+    Python: <input type="number" name="python" /><br>
+    C: <input type="number" name="c" /><br>
+    <input type="submit" value="Insert" />
+    </fieldset>
+</form>
+
+<form method="post" action="StudentServlet">
+    <input type="hidden" name="action" value="delete" />
+    <fieldset style="display: flex;align-items: center;justify-content: center;gap: 10px;flex-wrap: wrap;width: 50%;">
+
+    <legend>Delete Student</legend>
+    ID: <input type="number" name="id" /><br>
+    <input type="submit" value="Delete" />
+    </fieldset>
+</form>
+
+<form method="post" action="StudentServlet">
+    <input type="hidden" name="action" value="update" />
+    <fieldset style="display: flex;align-items: center;justify-content: center;gap: 10px;flex-wrap: wrap;width: 50%;">
+    <legend>Update Student</legend>
+    ID: <input type="number" name="id" /><br>
+    New Email: <input type="text" name="email" /><br>
+    New City: <input type="text" name="city" /><br>
+    <input type="submit" value="Update" />
+        </fieldset>
+</form>
+
+<form method="post" action="StudentServlet">
+    <fieldset style="display: flex;align-items: center;justify-content: center;gap: 10px;flex-wrap: wrap;width: 50%;">
+    <input type="hidden" name="action" value="show" />
+    <legend>Show All Students</legend>
+    <input type="submit" value="Show" />
+    </fieldset>
+</form>
+</body>
+</html>
