@@ -12,7 +12,7 @@ This repo brings together:
 - **Advanced Java** – web and enterprise features such as Servlets, JSP, JDBC, XML, Hibernate, Spring.
 - **DSA** – essential data structures and algorithm implementations to prepare for interviews and competitive challenges.
 
-__
+---
 
 ##  Why This Repo?
 
