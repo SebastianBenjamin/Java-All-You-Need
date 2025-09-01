@@ -1,4 +1,4 @@
-# Java-Is-All-You-Need
+# [![Java](https://skillicons.dev/icons?i=java&theme=light)](https://skillicons.dev)Java-Is-All-You-Need
 
 A comprehensive, well-organized collection of Java code—covering everything from Core and Advanced Java to Data Structures & Algorithms (DSA). Ideal for learners, educators, and developers aiming to deepen their Java expertise in one centralized place.
 
